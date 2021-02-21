@@ -24,6 +24,10 @@ function solution(S) {
 }
 
 console.log(solution("BAONXXOLL"));         // return 1
-console.log(solution("BAOOLLNNOLOLGBAX"));  //return 2
+console.log(solution("BAOOLLNNOLOLGBAX"));  // return 2
 console.log(solution("QAWABAWONL"));        // return 0
 console.log(solution("ONLABLABLOON"));      // return 1
+
+// 목표
+// 문자열이 들어오면 BALLOON을 구성하는 알파벳이 있는지 검사하고 제거한다.
+// 몇 번 제거할 수 있는지 리턴
