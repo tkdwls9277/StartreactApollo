@@ -1,5 +1,5 @@
 // 할 일에 대한 정보를 보여줌
-import React, { useState } from "react";
+import React from "react";
 import "../TodoItem.css";
 import { useTodosDispatch, Todo } from "../Contexts/TodosContext";
 
