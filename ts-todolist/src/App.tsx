@@ -8,8 +8,8 @@ const App = () => {
         <TodosContextProvider>
             <TodoForm />
             <TodoList />
-            <div>{openChatting(["Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"])}</div>
-            <div>{solution("()))((()")}</div>
+            {/* <div>{openChatting(["Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"])}</div> */}
+            {/* <div>{solution("()))((()")}</div> */}
         </TodosContextProvider>
     );
 };
@@ -50,11 +50,41 @@ function openChatting(record: string[]) {
     return answer;
 }
 
-function solution(p: string) {
-    var answer = "";
-    var items = p.split("");
+// function solution(p: string) {
+//     if (p.length === 0) {
+//         return "";
+//     }
 
-    return answer;
+//     var answer = "";
+//     var stack = [];
+//     var count = 0;
+
+//     for (var i = 1; i < p.length; i++) {
+//         if (stack.length === 0) {
+//             count = i;
+//             break;
+//         }
+//         if (stack[stack.length] === p[i]) {
+//             stack.push(p[i]);
+//         } else {
+//             stack.pop();
+//         }
+//     }
+
+//     var array = parentheses(p);
+
+//     return answer;
+// }
+
+function parentheses(str: string): { first: string; second: string } | boolean {
+    var stack = [];
+    var count = 0;
+    if (str.length === 0) {
+        return true;
+    }
+    stack.push(str[0]);
+
+    return parentheses(str.slice(count, str.length));
 }
 
 export default App;
