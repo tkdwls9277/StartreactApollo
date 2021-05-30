@@ -2,6 +2,7 @@ import React, { useDebugValue } from "react";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import { TodosContextProvider } from "./Contexts/TodosContext";
+import Props from "./books/R017_Props";
 
 const App = () => {
     return (
@@ -10,6 +11,9 @@ const App = () => {
             <TodoList />
             {/* <div>{openChatting(["Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"])}</div> */}
             {/* <div>{solution("()))((()")}</div> */}
+            <h1>Start React 200!</h1>
+            <p>CSS 적용하기</p>
+            <Props props_val="this is props" />
         </TodosContextProvider>
     );
 };
